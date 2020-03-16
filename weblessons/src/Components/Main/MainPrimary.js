@@ -13,6 +13,7 @@ export default class MainPrimary extends React.Component {
                 autoplay: 1
             }
         }
+       this.book = <p>fdfd <br></br>fdf </p>
     };
 
     keepAspect() {
@@ -43,6 +44,7 @@ export default class MainPrimary extends React.Component {
 
     render() {
         return (
+            <div id='primarycontainer'>
             <div id='playercontainer'>
                 <YouTube
                     videoId="pLHtg9KkTxw"
@@ -51,6 +53,11 @@ export default class MainPrimary extends React.Component {
                 />
 
             </div>
+            <div id='books'>
+                {this.book}
+            </div>
+            </div>
+            
         )
     }
 
