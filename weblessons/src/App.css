@@ -1,38 +1,244 @@
+div {
+  height: 100%;
+  width: 100%;
+  float: left;
+}
+
 .App {
+  text-align: center;
+  background-color: rgba(223, 63, 63, 1);
+
+  height: 100%;
+  min-height: 550px;
+  width: 100%;
+  min-width: 320px;
+  padding: 0.8%;
+  
+
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#Application {
+
+  background-color: white;
+
+  border-radius: 5px;
+
+  height: 100%;
+  min-height: 500px;
+  width: 100%;
+  padding: 0.5%;
+  
+
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+  -webkit-box-shadow: 7px 7px 24px -1px rgba(0,0,0,0.7);
+  -moz-box-shadow: 7px 7px 24px -1px rgba(0,0,0,0.7);
+  box-shadow: 7px 7px 24px -1px rgba(0,0,0,0.7);
+}
+
+#welcomeHeader {
+  height: 150px;
+  overflow: hidden;
+  width: 100%;
+  padding-left: 2%;
+  padding-top: 1%;
+
+
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#welcomeLogo {
+  height: 100px;
+  float: left;
+}
+
+#welcomePrimary {
+
+  padding-top: 5vh;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.welcomeInput {
+
+  border-radius: 5px;
+
+  border-width: 1px;
+  border-color: rgba(189, 188, 179, 0.61);
+
+
+  -webkit-box-shadow: 2px 4px 19px -9px rgba(0,0,0,0.54);
+  -moz-box-shadow: 2px 4px 19px -9px rgba(0,0,0,0.54);
+  box-shadow: 2px 4px 19px -9px rgba(0,0,0,0.54);
+
+  margin-top: 30px;
+  height: 50px;
+  width: 60%;
+  max-width: 500px;
+
+  padding-left: 20px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#welcomeButton {
+
+  border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#welcomeSubmit {
+
+  border-radius: 5px;
+
+  border-width: 0;
+  /* border-color: rgba(189, 188, 179, 0.61); */
+  background-color: rgba(223, 63, 63, 1);
+
+  -webkit-box-shadow: 2px 4px 19px -9px rgba(0,0,0,0.54);
+  -moz-box-shadow: 2px 4px 19px -9px rgba(0,0,0,0.54);
+  box-shadow: 2px 4px 19px -9px rgba(0,0,0,0.54);
+
+  margin-top: 30px;
+  height: 50px;
+  width: 60%;
+  max-width: 520px;
+
+
+  text-align: center;
+  font-size: 2vh;
+
 }
 
-.App-link {
-  color: #61dafb;
+#mainHeader {
+  height: 10%;
+  padding-left: 0.8%;
+  padding-top: 0.5%;
+  /* background-color: green; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#hamburgersmall {
+  height: 5vh;
+  min-height: 40px;
+  max-height: 60px;
+  float: left;
+ 
+}
+
+#mainheadertable, #mainheadertablerow {
+  padding: 0;
+  border-spacing: 0;
+  margin: 0;
+  width: 100%;
+  height: 8vh;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 0;
+}
+
+#mainheadertablecolumn1 {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 70%;
+  height: 100%;
+}
+
+#mainheadertablecolumn2 {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 30%;
+  height: 100%;
+}
+
+#questionsbutton {
+  padding: 0;
+  margin: 0;
+  height: 90%;
+  min-height: 50px;
+  /* max-height: 60px; */
+
+  width: 15vw;
+  min-width: 100px;
+  float: right;
+
+  background-color: white;
+  /* border: 0; */
+  border-width: 5px;
+  border-color: rgba(223, 63, 63, 1);;
+  border-radius: 5px;
+
+
+  /* -webkit-box-shadow: -1px 1px 16px 4px rgba(232,67,67,0.73);
+  -moz-box-shadow: -1px 1px 16px 4px rgba(232,67,67,0.73);
+  box-shadow: -1px 1px 16px 4px rgba(232,67,67,0.73); */
+
+
+}
+
+#answersbutton {
+  padding: 0;
+  margin: 0;
+  margin-left: 40px;
+  height: 90%;
+  min-height: 50px;
+  /* max-height: 60px; */
+
+  width: 15vw;
+  min-width: 100px;
+  float: left;
+
+  background-color: white;
+  
+ 
+  border-width: 5px;
+  border-color: black;
+  border-radius: 5px;
+/* 
+  -webkit-box-shadow: 5px 1px 15px 4px rgb(40, 44, 40);
+  -moz-box-shadow: 5px 1px 15px 4px rgba(40, 44, 40);
+  box-shadow: 5px 1px 15px 4px rgba(40, 44, 40); */
+
+}
+
+.primary {
+  height: 90%;
+  float: left;
+  width: 70%;
+  /* background-color: black; */
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.secondary {
+  height: 90%;
+  float: left;
+  width: 30%;
+  /* background-color: red; */
+}
+
+#playercontainer {
+  width: 100%;
+  height: 100%;
+  /* display: block; */
+  margin-left: 1%;
+  border-color: rgba(223, 63, 63, 1);
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 5px;
+  
+  /* border */
+  background-color: gray;
+
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
 }
